@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header button {
+    font-size: 26px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.245);
+    padding: 8px 18px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+header button:hover {
+    background-color: rgba(255, 255, 255, 0.565);
+    color: black;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.444);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-height: calc(100vh - 40px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main .apresentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .apresentation img {
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+}
+
+main .apresentation .logo {
+    display: inline;
+    align-items: center;
+    margin: 0 4px 0 0;
+    width: 12px;
+    height: 12px;
+}
+
+main .apresentation p {
+    margin: 10px 30px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+}
+
+main .apresentation button {
+    background-color: #0072d2;
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 20px 30px;
+    border: 1px solid #0072d2;
+    border-radius: 4px;
+}
+
+main .apresentation button:hover {
+    background-color: #0074d275;
+    cursor: pointer;
+}
+
+.resume {
+    margin: 30px;
+    width: 60%;
+    text-align: justify;
+    font-size: 23px;
+    color: white;
+}
+
+h2 {
+    border-bottom: white 2px solid;
+}
+
+dt {
+    font-size: 22px;
+    color: white;
+    margin: 10px 0 5px 0;
+}
+
+dd {
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.listDetails {
+    display: flex;
+    gap: 40%;
+    margin-right: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+
+    img {
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    img {
+        display: block;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+    }
+
+    .apresentation img {
+        width: 150px;
+    }
+
+    .apresentation button {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .resume {
+        font-size: 16px;
+        width: 90%;
+        text-align: justify;
+
+        .details h2 {
+            font-size: 18px;
+        }
+
+        dt,
+        dd {
+            display: block;
+            font-size: 14px;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        .apresentation img {
+            width: 100px;
+        }
+
+        .apresentation button {
+            width: 100px;
+            font-size: 10px;
+        }
+
+        .resume {
+            font-size: 12px;
+        }
+
+        dt,
+        dd {
+            display: block;
+            font-size: 12px;
+        }
+
+        footer img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
